@@ -4,8 +4,18 @@ import locale
 from flask import Flask, render_template
 from flask_talisman import Talisman
 
+csp = {
+    "default-src": [
+        "'self'",
+        "'unsafe-inline'",
+        "stackpath.bootstrapcdn.com",
+        "code.jquery.com",
+        "cdn.jsdelivr.net",
+    ]
+}
+
 app = Flask(__name__)
-Talisman(app)
+Talisman(app, content_security_policy=csp)
 
 
 @app.route("/")
