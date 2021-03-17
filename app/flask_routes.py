@@ -2,8 +2,10 @@ import datetime
 import locale
 
 from flask import Flask, render_template
+from flask_talisman import Talisman
 
 app = Flask(__name__)
+Talisman(app)
 
 
 @app.route("/")
