@@ -9,7 +9,7 @@ csp = {
         "'self'",
         "getbootstrap.com",
         "cdnjs.cloudflare.com",
-        "googletagmanager.com",
+        "www.googletagmanager.com",
     ]
 }
 
