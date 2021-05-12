@@ -18,7 +18,7 @@ football_data_repository = football_provider.provide_football_data_repository()
 def index():
     locale.setlocale(locale.LC_TIME, "pt_PT.UTF-8")
     date = datetime.date.today().strftime("%d de %B de %Y")
-    message = "ainda não"
+    message = "já"
     response = football_data_repository.get_league_standings(
         SupportedLeagues.PT_PRIMEIRA_LIGA
     )
